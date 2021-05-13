@@ -12,5 +12,5 @@
     COPY resources/public/index.html resources/public/index.html
     COPY public/css public/css
 
-    RUN npx shadow-cljs release :app
+    RUN clj -A:shadow-cljs release app
 
